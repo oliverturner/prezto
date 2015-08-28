@@ -26,6 +26,9 @@ export DOCKER_MACHINE_NAME="default"
 export UV_THREADPOOL_SIZE=64
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+export PGDATA=/usr/local/var/postgres
+
 ###-begin-pm2-completion-###
 ### credits to npm for the completion file model
 #
