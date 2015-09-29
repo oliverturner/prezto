@@ -32,6 +32,9 @@ export UV_THREADPOOL_SIZE=64
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
 
+# Postgres
+export PGDATA=/usr/local/var/postgres
+
 # sonarqube config
 # brew install sonarqube
 # brew install sonar-runner
