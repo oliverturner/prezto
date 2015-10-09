@@ -35,6 +35,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 # Postgres
 export PGDATA=/usr/local/var/postgres
 
+# BEST!
+eval "$(thefuck --alias)"
+
 # sonarqube config
 # brew install sonarqube
 # brew install sonar-runner
