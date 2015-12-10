@@ -38,7 +38,11 @@ export PGDATA=/usr/local/var/postgres
 # BEST!
 eval "$(thefuck --alias)"
 
+alias goddammit='git reset --soft HEAD^'
+
 # sonarqube config
 # brew install sonarqube
 # brew install sonar-runner
 export SONAR_RUNNER_HOME=/usr/local/Cellar/sonar-runner/2.4/libexec
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
