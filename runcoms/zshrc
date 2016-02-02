@@ -22,27 +22,18 @@ export NVM_DIR="${ZDOTDIR:-$HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Docker environment variables
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_CERT_PATH="${ZDOTDIR:-$HOME}/.docker/machine/machines/default"
-export DOCKER_MACHINE_NAME="default"
+eval "$(docker-machine env default)"
 
 # Temporary hack to get round libsass issues
 export UV_THREADPOOL_SIZE=64
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
 
-# Postgres
-export PGDATA=/usr/local/var/postgres
-
 # BEST!
 eval "$(thefuck --alias)"
 
+# Git aliases
 alias goddammit='git reset --soft HEAD^'
 
-# sonarqube config
-# brew install sonarqube
-# brew install sonar-runner
-export SONAR_RUNNER_HOME=/usr/local/Cellar/sonar-runner/2.4/libexec
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
