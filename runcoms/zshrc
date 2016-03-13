@@ -16,6 +16,7 @@ fi
 unalias run-help
 autoload run-help
 export HELPDIR=/usr/local/share/zsh/help
+# fpath=(/usr/local/share/zsh-completions $fpath)
 
 # NVM
 export NVM_DIR="${ZDOTDIR:-$HOME}/.nvm"
@@ -27,13 +28,10 @@ eval "$(docker-machine env default)"
 # Temporary hack to get round libsass issues
 export UV_THREADPOOL_SIZE=64
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
-
 # BEST!
 eval "$(thefuck --alias)"
 
-# Git aliases
-alias goddammit='git reset --soft HEAD^'
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
