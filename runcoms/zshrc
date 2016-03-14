@@ -23,7 +23,7 @@ export NVM_DIR="${ZDOTDIR:-$HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Docker environment variables
-eval "$(docker-machine env default)"
+# eval "$(docker-machine env default)"
 
 # Temporary hack to get round libsass issues
 export UV_THREADPOOL_SIZE=64
