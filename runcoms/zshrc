@@ -20,13 +20,13 @@ export HELPDIR=/usr/local/share/zsh/help
 
 # NVM
 export NVM_DIR="${ZDOTDIR:-$HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# RBENV
+eval "$(rbenv init -)"
 
 # Docker environment variables
 # eval "$(docker-machine env default)"
-
-# Temporary hack to get round libsass issues
-export UV_THREADPOOL_SIZE=64
 
 # BEST!
 eval "$(thefuck --alias)"
