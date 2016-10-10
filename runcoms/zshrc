@@ -25,9 +25,6 @@ export NVM_DIR="${ZDOTDIR:-$HOME}/.nvm"
 # RBENV
 eval "$(rbenv init -)"
 
-# Docker environment variables
-# eval "$(docker-machine env default)"
-
 # BEST!
 eval "$(thefuck --alias)"
 
@@ -35,3 +32,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export CCP_HOME=/Users/ukotu01/Dev/ticketmaster/ccp/tmol-web-spring
+
+export TM_API="pTAf3X1DA6XCHjaQaw0WmlgcA0j1r32C"
+export HOMEBREW_GITHUB_API_TOKEN="e16b872b0c2a065bbd2f02dea584d3c8601d5d01"
